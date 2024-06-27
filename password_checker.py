@@ -31,21 +31,32 @@ Please enter a password with the follwing requirements which must include:
  - Contains the letter "z"
  - Begins with an uppercase letter
 """
+password = "pw"
 # pw_length = (15>=8)
 print(str1)
 
 pw = input("Enter password here: ")
 
-if len(pw) >= 8 :
-    print(len(pw_length))
-    print(len(pw_length) 
-          
-          is not (15>=8):
-    print("Decline! You must include no more than ")
+if 8 <= len(pw) <= 15 :
+    print("Accept!")
+else:
+    print("Decline! You must include 8-15 characters.") 
+   
+# (15>=8):
   
-     
+if "z" in pw:
+    print("Accept!")
+else:
+    print("Decline!" + " You must include a 'z'.")
 
-print(test.find("z"))
-print(test.find("!"))
-print(test.find("isupper"))
+     
+if pw[-1] == "!":
+    print("Accept!")
+else: 
+    print("Decline! You must include a '!'")
+
+# print(test.find("z"))
+# print(test.find("!"))
+# print(test.find("isupper"))
+
 
